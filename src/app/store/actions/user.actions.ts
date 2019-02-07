@@ -6,7 +6,7 @@ export enum UserActionsList {
   GetUsers = '[User] Get Users',
   GetUsersSuccess = '[User] Get Users Success',
   GetUser = '[User] Get User',
-  GetUserSuccess = '[User] Get User Success',
+  GetUserSuccess = '[User] Get User Success'
 }
 
 export class GetUsers implements Action {
@@ -31,4 +31,4 @@ export class GetUserSuccess implements Action {
 export type UserActions = GetUsers
   | GetUsersSuccess
   | GetUser
-  | GetUserSuccess
+  | GetUserSuccess;
