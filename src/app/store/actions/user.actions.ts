@@ -24,7 +24,7 @@ export class GetUser implements Action {
 }
 
 export class GetUserSuccess implements Action {
-  readonly type = UserActionsList.GetUsers;
+  readonly type = UserActionsList.GetUserSuccess;
   constructor(public payload: User) {}
 }
 
