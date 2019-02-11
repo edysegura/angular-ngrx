@@ -6,7 +6,7 @@ export const userReducers = (
   state = initialUserState,
   action: UserActions
 ): UserState => {
-  switch(action.type) {
+  switch (action.type) {
     case UserActionsList.GetUsersSuccess: {
       return {
         ...state,
@@ -24,4 +24,4 @@ export const userReducers = (
     default:
       return state;
   }
-}
+};
