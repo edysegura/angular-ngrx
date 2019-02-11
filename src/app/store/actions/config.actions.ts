@@ -16,4 +16,4 @@ export class GetConfigSuccess implements Action {
   constructor(public payload: Config[]) {}
 }
 
-export type ConfigAction = GetConfig | GetConfigSuccess;
+export type ConfigActions = GetConfig | GetConfigSuccess;
