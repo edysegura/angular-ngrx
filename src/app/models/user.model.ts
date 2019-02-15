@@ -4,3 +4,7 @@ export interface User {
   cardNumber: string;
   cardType: string;
 }
+
+export interface Users {
+  users: User[];
+}
