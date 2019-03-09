@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 
 import { GetConfig } from './store/actions/config.actions';
@@ -10,7 +10,7 @@ import { AppState } from './store/state/app.state';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'angular-ngrx';
   config = this.store.pipe(select(selectConfig));
 
